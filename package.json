@@ -1,0 +1,16 @@
+{
+	"name": "cypress-commons",
+	"version": "0.1",
+	"description": "Reusable components, commands & more to make your day easier",
+	"main": "index.js",
+	"repository": "https://github.com/s1n7ax/cypress-commons.git",
+	"author": "s1n7ax <srineshnisala@gmail.com>",
+	"license": "MIT",
+	"private": false,
+	"scripts": {
+		"test": "live-server && cypress run"
+	},
+	"dependencies": {
+		"cypress": "^4.7.0"
+	}
+}
