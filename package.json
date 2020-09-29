@@ -8,9 +8,11 @@
 	"license": "MIT",
 	"private": false,
 	"scripts": {
-		"test": "live-server && cypress run"
+		"test": "cypress run",
+		"c": "cypress open"
 	},
 	"dependencies": {
-		"cypress": "^4.7.0"
+		"cypress": "^4.7.0",
+		"live-server": "^1.2.1"
 	}
 }
