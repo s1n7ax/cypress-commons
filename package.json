@@ -12,7 +12,9 @@
 		"c": "cypress open"
 	},
 	"dependencies": {
-		"cypress": "^4.7.0",
+		"cypress": "^4.7.0"
+	},
+	"devDependencies": {
 		"live-server": "^1.2.1"
 	}
 }
