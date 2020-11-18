@@ -1,9 +1,9 @@
 /// <reference types="cypress" />
 
-import { FunctionParameterBuilder } from '../../src/commands/domcommands';
+import FunctionParams from '../../src/commands/function-params';
 
 describe('function parameter builder', () => {
-	let fpb = new FunctionParameterBuilder();
+	let fpb = new FunctionParams();
 	fpb.addParamRule([
 		{
 			name: 'content',
@@ -106,7 +106,7 @@ describe('function parameter builder', () => {
 	});
 
 	it('should support all the types', () => {
-		const fpb = FunctionParameterBuilder.init()
+		const fpb = FunctionParams.init()
 			.addParamRule([{ name: 'function', type: 'function' }])
 			.addParamRule([{ name: 'array', type: 'array' }])
 			.addParamRule([{ name: 'object', type: 'object' }])
