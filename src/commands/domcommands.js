@@ -146,27 +146,27 @@ export class CommandHelper {
 /*
  * commands
  */
-const vget = (prevSubject, ...args) => {
+export const vget = (prevSubject, ...args) => {
 	return CommandHelper.vget({}, prevSubject, ...args);
 };
 
-const vcontains = (prevSubject, ...args) => {
+export const vcontains = (prevSubject, ...args) => {
 	CommandHelper.vcontains({}, prevSubject, ...args);
 };
 
-const vcontainsNext = (prevSubject, ...args) => {
+export const vcontainsNext = (prevSubject, ...args) => {
 	CommandHelper.vcontainsNext({}, prevSubject, ...args);
 };
 
-const equal = (prevSubject, ...args) => {
+export const equal = (prevSubject, ...args) => {
 	CommandHelper.equal({}, prevSubject, ...args);
 };
 
-const vequal = (prevSubject, ...args) => {
+export const vequal = (prevSubject, ...args) => {
 	CommandHelper.vequal({}, prevSubject, ...args);
 };
 
-const vequalNext = (prevSubject, ...args) => {
+export const vequalNext = (prevSubject, ...args) => {
 	CommandHelper.vequalNext({}, prevSubject, ...args);
 };
 

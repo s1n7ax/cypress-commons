@@ -1,6 +1,6 @@
 {
 	"name": "cypress-commons",
-	"version": "0.1",
+	"version": "0.1.1",
 	"description": "Reusable components, commands & more to make your day easier",
 	"main": "index.js",
 	"repository": "https://github.com/s1n7ax/cypress-commons.git",
@@ -8,13 +8,14 @@
 	"license": "MIT",
 	"private": false,
 	"scripts": {
-		"test": "cypress run",
+		"test": "concurrently --kill-others \"live-server\" \"cypress open\"",
 		"c": "cypress open"
 	},
 	"dependencies": {
 		"cypress": "^4.7.0"
 	},
 	"devDependencies": {
+		"concurrently": "^5.3.0",
 		"live-server": "^1.2.1"
 	}
 }
